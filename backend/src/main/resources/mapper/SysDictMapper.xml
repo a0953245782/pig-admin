@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenym.pig.mapper.SysDictMapper">
+
+	<resultMap id="sysDictMap" type="com.chenym.pig.model.SysDict">
+		<id property="id" column="id" />
+		<result property="keyy" column="keyy" />
+		<result property="valuee" column="valuee" />
+		<result property="fieldName" column="field_name" />
+		<result property="tableName" column="table_name" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+		<result property="delFlag" column="del_flag" />
+	</resultMap>
+</mapper>

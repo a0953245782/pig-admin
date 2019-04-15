@@ -1,0 +1,44 @@
+server:
+  port: 8081
+
+spring:
+  redis:
+    host: 127.0.0.1
+    password:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+
+# mybaits-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: 0
+      field-strategy: 1
+      table-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+management:
+  endpoints:
+    web:
+      base-path: /api/actuator
+      exposure:
+        include: ['httptrace', 'metrics']
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+
+
