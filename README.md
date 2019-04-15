@@ -13,9 +13,10 @@ admin | admin | 超级管理员
 
 1. IDEA 或者 Eclipse安装lombok插件
 
-2. 新建MySQL（版本5.7.x）数据库，导入[SQL](https://github.com/a0953245782/pig-vue/tree/master/backend/src/main/resources/sql/db.sql)文件
+2. 新建MySQL（版本5.7.x）数据库，导入[SQL](https://github.com/a0953245782/pig-admin/blob/master/backend/src/main/resources/db.sql)文件
+                                         
 
-3. 导入[backend项目](https://github.com/a0953245782/pig-vue/tree/master/backend)
+3. 导入[backend项目](https://github.com/a0953245782/pig-admin/tree/master/backend)
 
 4. 修改数据库配置，redis配置，等待Maven下载依赖
 
